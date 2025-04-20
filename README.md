@@ -8,9 +8,7 @@ This project demonstrates a full pipeline that begins with fine-tuning a T5-base
 
 ### 1. Dataset Preparation
 - The dataset contains multi-turn conversations along with corresponding human-written summaries.
-- Input prompts were crafted to follow an instruction-style format for better learning:
-  - *Start Prompt:* `Summarize the following conversation.`
-  - *End Prompt:* `Summary:`
+- Input prompts were crafted to follow an instruction-style format for better learning
 
 ### 2. Fine-tuning T5-Base
 - The T5-base model was fine-tuned using the prepared dataset.
