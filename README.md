@@ -1,19 +1,35 @@
-🤖 Dialogue Summarization & Chatbot System
+# 🤖 Dialogue Summarization & Chatbot System
 
-This project showcases a complete pipeline starting from fine-tuning a T5-base model for dialogue summarization, enhancing it using LoRA (Low-Rank Adaptation) for efficient parameter tuning, and integrating it into a chatbot that generates responses with GPT-Neo and summarizes the chat history with the fine-tuned T5 model.
+This project demonstrates a full pipeline that begins with fine-tuning a T5-base model for dialogue summarization, applies LoRA (Low-Rank Adaptation) for efficient parameter fine-tuning, and integrates both into a chatbot system that combines GPT-Neo for generating human-like responses with a summarizing memory module.
 
-📌 Project Overview
-    Dataset Preparation
-    We utilized a dialogue-summary dataset where each entry contains a multi-turn conversation and its corresponding summary.
-    Fine-tuning T5-Base
-        The T5-base model was fine-tuned using instruction-style prompts for better understanding and alignment with the summarization task.
-        Tokenization was applied using the T5 tokenizer with prompt engineering for both input and output.
-        Training was monitored using Weights & Biases (W&B).
-    Parameter-Efficient Fine-tuning with LoRA
-        LoRA was applied to the attention mechanism (query q and value v matrices).
-        Only a small number of additional parameters were trained while freezing the rest of the model.
-        This enabled high learning rates, low memory consumption, and faster convergence.
-    Chatbot Integration
-        GPT-Neo was used for generating human-like responses in the chatbot.
-        The dialogue history is summarized using the fine-tuned LoRA-T5 model to maintain concise context and memory.
-        This two-model architecture ensures both response generation and memory efficiency.
+---
+
+## 📌 Project Overview
+
+### 1. Dataset Preparation
+- The dataset contains multi-turn conversations along with corresponding human-written summaries.
+- Input prompts were crafted to follow an instruction-style format for better learning:
+  - *Start Prompt:* `Summarize the following conversation.`
+  - *End Prompt:* `Summary:`
+
+### 2. Fine-tuning T5-Base
+- The T5-base model was fine-tuned using the prepared dataset.
+- Hugging Face’s tokenizer was used to tokenize input/output sequences with padding and truncation.
+- Training utilized `Trainer` and `TrainingArguments` from Hugging Face's Transformers library.
+- Weights & Biases (W&B) was used for monitoring and logging metrics.
+
+### 3. LoRA Fine-tuning (Parameter-Efficient Tuning)
+- Low-Rank Adaptation (LoRA) was applied to the attention layers (query `q` and value `v` matrices).
+- Key benefits of LoRA fine-tuning:
+  - Requires fewer trainable parameters.
+  - Enables faster training with less memory usage.
+  - Allows higher learning rates without destabilizing training.
+- PEFT (Parameter-Efficient Fine-Tuning) library from Hugging Face was used to integrate LoRA.
+
+### 4. Chatbot Integration
+- **Response Generation:** GPT-Neo model is used to generate human-like responses to user queries.
+- **Memory Summarization:** The LoRA fine-tuned T5 model generates concise summaries of the conversation history.
+- This setup ensures the chatbot remains context-aware while managing long conversations efficiently.
+
+---
+
