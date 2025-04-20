@@ -1,0 +1,136 @@
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+Training: (100, 2)
+Validation: (10, 2)
+Test: (10, 2)
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 100
+    })
+    validation: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+    test: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+})
+{'input_ids': [12198, 1635, 1737, 8, 826, 3634, 5, 1713, 345, 13515, 188, 4663, 10, 21820, 3, 6, 3, 23, 31, 51, 207, 3, 5, 10191, 53, 12, 3, 15534, 1161, 29, 23, 9, 333, 3, 5, 25, 114, 6244, 9, 75, 3, 58, 1713, 345, 13515, 279, 4663, 10, 3, 15534, 1161, 29, 23, 9, 333, 19, 82, 6097, 1305, 2324, 3, 55, 1713, 345, 13515, 188, 4663, 10, 3, 23, 31, 51, 4380, 540, 12, 805, 82, 166, 443, 5, 1713, 345, 13515, 279, 4663, 10, 3, 23, 31, 51, 2641, 15, 35, 203, 625, 5, 20698, 10, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [947, 19, 3, 9, 9251, 13, 8, 3634, 10, 37, 3634, 708, 28, 5780, 71, 3, 21008, 70, 14241, 21, 8, 2324, 96, 14318, 99, 127, 29, 23, 9, 2129, 121, 11, 3558, 3, 99, 5780, 272, 114, 7, 2740, 9305, 5, 5780, 272, 2471, 70, 333, 21, 8, 337, 2324, 6, 3, 20508, 3, 9, 1017, 1046, 5, 37, 3634, 258, 3, 21082, 12, 525, 4064, 6, 28, 5780, 71, 3, 27492, 79, 33, 4380, 95, 12, 805, 70, 166, 443, 5, 7940, 6, 5780, 272, 5111, 70, 1246, 6, 3, 17211, 79, 33, 507, 203, 625, 5, 9126, 6, 8, 3634, 47, 659, 21992, 11, 6995, 6, 28, 3, 9, 992, 30, 2471, 3984, 11, 525, 3864, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+fatal error: Unable to locate credentials
+--2025-04-17 14:07:20--  https://dlai-generative-ai.s3.amazonaws.com/models/peft-dialogue-summary-checkpoint/adapter_model.bin
+Resolving dlai-generative-ai.s3.amazonaws.com (dlai-generative-ai.s3.amazonaws.com)... 16.15.217.154, 54.231.161.201, 16.15.217.168, ...
+Connecting to dlai-generative-ai.s3.amazonaws.com (dlai-generative-ai.s3.amazonaws.com)|16.15.217.154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14208525 (14M) [application/octet-stream]
+Saving to: ‘adapter_model.bin’
+
+adapter_model.bin   100%[===================>]  13.55M  5.65MB/s    in 2.4s    
+
+2025-04-17 14:07:24 (5.65 MB/s) - ‘adapter_model.bin’ saved [14208525/14208525]
+
+--2025-04-17 14:08:38--  https://dlai-generative-ai.s3.amazonaws.com/models/peft-dialogue-summary-checkpoint/adapter_config.json
+Resolving dlai-generative-ai.s3.amazonaws.com (dlai-generative-ai.s3.amazonaws.com)... 3.5.29.237, 52.216.136.11, 54.231.171.161, ...
+Connecting to dlai-generative-ai.s3.amazonaws.com (dlai-generative-ai.s3.amazonaws.com)|3.5.29.237|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 334 [application/json]
+Saving to: ‘adapter_config.json’
+
+adapter_config.json 100%[===================>]     334  --.-KB/s    in 0s      
+
+2025-04-17 14:08:39 (18.4 MB/s) - ‘adapter_config.json’ saved [334/334]
+
+Trainable parameters: 0 / 251116800 (0.00%)
+None
+Trainable parameters: 3538944 / 251116800 (1.41%)
+None
+Trainable parameters: 0 / 251116800 (0.00%)
+None
+Trainable Model Parameters:  3538944
+All model parameters:  251116800
+percentage of trainable model parameters:  0.014092820552029971
+Base T5 Model
+ None
+Trainable Model Parameters:  0
+All model parameters:  251116800
+percentage of trainable model parameters:  0.0
+PEFT Model
+ None
+Trainable Model Parameters:  3538944
+All model parameters:  251116800
+percentage of trainable model parameters:  1.4092820552029972
+Base T5 Model
+ None
+Trainable Model Parameters:  0
+All model parameters:  251116800
+percentage of trainable model parameters:  0.0
+PEFT Model
+ None
+Trainable Model Parameters:  3538944
+All model parameters:  251116800
+percentage of trainable model parameters:  1.4092820552029972
+Base T5 Model
+ None
+Trainable Model Parameters:  0
+All model parameters:  251116800
+percentage of trainable model parameters:  0.0
+PEFT Model
+ None
+Base T5 Model
+Base T5 Model
+Trainable Model Parameters:  3538944
+All Model Parameters:  251116800
+Percentage of Trainable Parameters:  1.4092820552029972 %
+
+PEFT Model
+Trainable Model Parameters:  0
+All Model Parameters:  251116800
+Percentage of Trainable Parameters:  0.0 %
+`generation_config` default values have been modified to match model-specific defaults: {'pad_token_id': 0, 'eos_token_id': 1, 'decoder_start_token_id': 0}. If this is not desired, please set these values explicitly.
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+BASELINE HUMAN SUMMARY:
+The conversation between the radio DJ and Person B touched on the types of topics discussed on the talk radio station, with Person A revealing that they actually have no interest in music or current events. Instead, they shared their personal aspiration to open a bakery upon retirement, which sparked a connection with Person B who had a family-owned restaurant.
+---------------------------------------------------------------------------------------------------
+ORIGINAL MODEL:
+#PersonB: I'm a radio DJ, but I want to be a radio DJ.
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+BASELINE HUMAN SUMMARY:
+The conversation between the radio DJ and Person B touched on the types of topics discussed on the talk radio station, with Person A revealing that they actually have no interest in music or current events. Instead, they shared their personal aspiration to open a bakery upon retirement, which sparked a connection with Person B who had a family-owned restaurant.
+---------------------------------------------------------------------------------------------------
+ORIGINAL MODEL:
+#PersonB: I'm a radio DJ, but I want to be a radio DJ.
+---------------------------------------------------------------------------------------------------
+INSTRUCT MODEL:
+#PersonA# is a radio DJ and wants to open a bakery when retirement. #PersonB# tells #PersonA# #PersonB#'s family owned a small restaurant.
+---------------------------------------------------------------------------------------------------
+PEFT MODEL: #PersonA# is a radio DJ and wants to open a bakery when #PersonA# retires. #PersonB# tells #PersonA# #PersonA#'s family owned a small restaurant.
+---------------------------------------------------------------------------------------------------
+BASELINE HUMAN SUMMARY:
+The conversation between the radio DJ and Person B touched on the types of topics discussed on the talk radio station, with Person A revealing that they actually have no interest in music or current events. Instead, they shared their personal aspiration to open a bakery upon retirement, which sparked a connection with Person B who had a family-owned restaurant.
+---------------------------------------------------------------------------------------------------
+ORIGINAL MODEL:
+#PersonB: I'm a radio DJ, but I want to be a radio DJ.
+---------------------------------------------------------------------------------------------------
+INSTRUCT MODEL:
+#PersonA# is a radio DJ and wants to open a bakery when retirement. #PersonB# tells #PersonA# #PersonB#'s family owned a small restaurant.
+---------------------------------------------------------------------------------------------------
+PEFT MODEL
+: #PersonA# is a radio DJ and wants to open a bakery when #PersonA# retires. #PersonB# tells #PersonA# #PersonA#'s family owned a small restaurant.
+ORIGINAL MODEL:
+{'rouge1': np.float64(0.1300912638248754), 'rouge2': np.float64(0.02522226281817075), 'rougeL': np.float64(0.09618514689883266), 'rougeLsum': np.float64(0.09697063085770186)}
+INSTRUCT MODEL:
+{'rouge1': np.float64(0.21651535222969326), 'rouge2': np.float64(0.05739322665638455), 'rougeL': np.float64(0.15601460460766609), 'rougeLsum': np.float64(0.15967405348684777)}
+PEFT MODEL:
+{'rouge1': np.float64(0.22227234237235888), 'rouge2': np.float64(0.07629383068949316), 'rougeL': np.float64(0.17078247806775987), 'rougeLsum': np.float64(0.17346567564661025)}
+Absolute percentage improvement of PEFT MODEL over ORIGINAL MODEL
+rouge1: 9.22%
+rouge2: 5.11%
+rougeL: 7.46%
+rougeLsum: 7.65%
+Absolute percentage improvement of PEFT MODEL over INSTRUCT MODEL
+rouge1: 0.58%
+rouge2: 1.89%
+rougeL: 1.48%
+rougeLsum: 1.38%

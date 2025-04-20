@@ -1,0 +1,113 @@
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+Dataset({
+    features: ['input_ids', 'labels'],
+    num_rows: 100
+})
+{'input_ids': [12198, 1635, 1737, 8, 826, 3634, 5, 1713, 345, 13515, 188, 4663, 10, 21820, 3, 6, 3, 23, 31, 51, 207, 3, 5, 10191, 53, 12, 3, 15534, 1161, 29, 23, 9, 333, 3, 5, 25, 114, 6244, 9, 75, 3, 58, 1713, 345, 13515, 279, 4663, 10, 3, 15534, 1161, 29, 23, 9, 333, 19, 82, 6097, 1305, 2324, 3, 55, 1713, 345, 13515, 188, 4663, 10, 3, 23, 31, 51, 4380, 540, 12, 805, 82, 166, 443, 5, 1713, 345, 13515, 279, 4663, 10, 3, 23, 31, 51, 2641, 15, 35, 203, 625, 5, 20698, 10, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [947, 19, 3, 9, 9251, 13, 8, 3634, 10, 37, 3634, 708, 28, 5780, 71, 3, 21008, 70, 14241, 21, 8, 2324, 96, 14318, 99, 127, 29, 23, 9, 2129, 121, 11, 3558, 3, 99, 5780, 272, 114, 7, 2740, 9305, 5, 5780, 272, 2471, 70, 333, 21, 8, 337, 2324, 6, 3, 20508, 3, 9, 1017, 1046, 5, 37, 3634, 258, 3, 21082, 12, 525, 4064, 6, 28, 5780, 71, 3, 27492, 79, 33, 4380, 95, 12, 805, 70, 166, 443, 5, 7940, 6, 5780, 272, 5111, 70, 1246, 6, 3, 17211, 79, 33, 507, 203, 625, 5, 9126, 6, 8, 3634, 47, 659, 21992, 11, 6995, 6, 28, 3, 9, 992, 30, 2471, 3984, 11, 525, 3864, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+DatasetInfo(description='', citation='', homepage='', license='', features={'input_ids': Sequence(feature=Value(dtype='int64', id=None), length=-1, id=None), 'labels': Sequence(feature=Value(dtype='int64', id=None), length=-1, id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name=None, config_name=None, version=None, splits=None, download_checksums=None, download_size=None, post_processing_size=None, dataset_size=None, size_in_bytes=None)
+{'input_ids': [12198, 1635, 1737, 8, 826, 3634, 5, 1713, 345, 13515, 188, 4663, 10, 21820, 3, 6, 3, 23, 31, 51, 207, 3, 5, 10191, 53, 12, 3, 15534, 1161, 29, 23, 9, 333, 3, 5, 25, 114, 6244, 9, 75, 3, 58, 1713, 345, 13515, 279, 4663, 10, 3, 15534, 1161, 29, 23, 9, 333, 19, 82, 6097, 1305, 2324, 3, 55, 1713, 345, 13515, 188, 4663, 10, 3, 23, 31, 51, 4380, 540, 12, 805, 82, 166, 443, 5, 1713, 345, 13515, 279, 4663, 10, 3, 23, 31, 51, 2641, 15, 35, 203, 625, 5, 20698, 10, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [947, 19, 3, 9, 9251, 13, 8, 3634, 10, 37, 3634, 708, 28, 5780, 71, 3, 21008, 70, 14241, 21, 8, 2324, 96, 14318, 99, 127, 29, 23, 9, 2129, 121, 11, 3558, 3, 99, 5780, 272, 114, 7, 2740, 9305, 5, 5780, 272, 2471, 70, 333, 21, 8, 337, 2324, 6, 3, 20508, 3, 9, 1017, 1046, 5, 37, 3634, 258, 3, 21082, 12, 525, 4064, 6, 28, 5780, 71, 3, 27492, 79, 33, 4380, 95, 12, 805, 70, 166, 443, 5, 7940, 6, 5780, 272, 5111, 70, 1246, 6, 3, 17211, 79, 33, 507, 203, 625, 5, 9126, 6, 8, 3634, 47, 659, 21992, 11, 6995, 6, 28, 3, 9, 992, 30, 2471, 3984, 11, 525, 3864, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:621: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+/usr/local/lib/python3.11/dist-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 13 columns):
+ #   Column                     Non-Null Count  Dtype
+---  ------                     --------------  -----
+ 0   personas                   1000 non-null   object
+ 1   additional_context         334 non-null    object
+ 2   previous_utterance         1000 non-null   object
+ 3   context                    1000 non-null   object
+ 4   free_messages              1000 non-null   object
+ 5   guided_messages            1000 non-null   object
+ 6   suggestions                1000 non-null   object
+ 7   guided_chosen_suggestions  1000 non-null   object
+ 8   label_candidates           1000 non-null   object
+ 9   conversation               1000 non-null   object
+ 10  summary                    1000 non-null   object
+ 11  input_ids                  1000 non-null   object
+ 12  labels                     1000 non-null   object
+dtypes: object(13)
+memory usage: 101.7+ KB
+Training: (100, 2)
+Validation: (10, 2)
+Test: (10, 2)
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 100
+    })
+    validation: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+    test: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+})
+{'input_ids': [12198, 1635, 1737, 8, 826, 3634, 5, 1713, 345, 13515, 188, 4663, 10, 21820, 3, 6, 3, 23, 31, 51, 207, 3, 5, 10191, 53, 12, 3, 15534, 1161, 29, 23, 9, 333, 3, 5, 25, 114, 6244, 9, 75, 3, 58, 1713, 345, 13515, 279, 4663, 10, 3, 15534, 1161, 29, 23, 9, 333, 19, 82, 6097, 1305, 2324, 3, 55, 1713, 345, 13515, 188, 4663, 10, 3, 23, 31, 51, 4380, 540, 12, 805, 82, 166, 443, 5, 1713, 345, 13515, 279, 4663, 10, 3, 23, 31, 51, 2641, 15, 35, 203, 625, 5, 20698, 10, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [947, 19, 3, 9, 9251, 13, 8, 3634, 10, 37, 3634, 708, 28, 5780, 71, 3, 21008, 70, 14241, 21, 8, 2324, 96, 14318, 99, 127, 29, 23, 9, 2129, 121, 11, 3558, 3, 99, 5780, 272, 114, 7, 2740, 9305, 5, 5780, 272, 2471, 70, 333, 21, 8, 337, 2324, 6, 3, 20508, 3, 9, 1017, 1046, 5, 37, 3634, 258, 3, 21082, 12, 525, 4064, 6, 28, 5780, 71, 3, 27492, 79, 33, 4380, 95, 12, 805, 70, 166, 443, 5, 7940, 6, 5780, 272, 5111, 70, 1246, 6, 3, 17211, 79, 33, 507, 203, 625, 5, 9126, 6, 8, 3634, 47, 659, 21992, 11, 6995, 6, 28, 3, 9, 992, 30, 2471, 3984, 11, 525, 3864, 5, 1, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100,
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:621: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+/usr/local/lib/python3.11/dist-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+/bin/bash: line 1: aws: command not found
+Collecting awscli
+  Downloading awscli-1.38.35-py3-none-any.whl.metadata (11 kB)
+Collecting botocore==1.37.35 (from awscli)
+  Downloading botocore-1.37.35-py3-none-any.whl.metadata (5.7 kB)
+Collecting docutils<=0.19,>=0.18.1 (from awscli)
+  Downloading docutils-0.19-py3-none-any.whl.metadata (2.7 kB)
+Collecting s3transfer<0.12.0,>=0.11.0 (from awscli)
+  Downloading s3transfer-0.11.4-py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: PyYAML<6.1,>=3.10 in /usr/local/lib/python3.11/dist-packages (from awscli) (6.0.2)
+Collecting colorama<0.4.7,>=0.2.5 (from awscli)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting rsa<4.8,>=3.1.2 (from awscli)
+  Downloading rsa-4.7.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from botocore==1.37.35->awscli)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.11/dist-packages (from botocore==1.37.35->awscli) (2.8.2)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in /usr/local/lib/python3.11/dist-packages (from botocore==1.37.35->awscli) (2.3.0)
+Requirement already satisfied: pyasn1>=0.1.3 in /usr/local/lib/python3.11/dist-packages (from rsa<4.8,>=3.1.2->awscli) (0.6.1)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil<3.0.0,>=2.1->botocore==1.37.35->awscli) (1.17.0)
+Downloading awscli-1.38.35-py3-none-any.whl (4.7 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.7/4.7 MB[0m [31m81.9 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading botocore-1.37.35-py3-none-any.whl (13.5 MB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m13.5/13.5 MB[0m [31m107.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading docutils-0.19-py3-none-any.whl (570 kB)
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m570.5/570.5 kB[0m [31m20.9 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading rsa-4.7.2-py3-none-any.whl (34 kB)
+Downloading s3transfer-0.11.4-py3-none-any.whl (84 kB)
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Installing collected packages: rsa, jmespath, docutils, colorama, botocore, s3transfer, awscli
+  Attempting uninstall: rsa
+    Found existing installation: rsa 4.9
+    Uninstalling rsa-4.9:
+      Successfully uninstalled rsa-4.9
+  Attempting uninstall: docutils
+    Found existing installation: docutils 0.21.2
+    Uninstalling docutils-0.21.2:
+      Successfully uninstalled docutils-0.21.2
+[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sphinx 8.2.3 requires docutils<0.22,>=0.20, but you have docutils 0.19 which is incompatible.[0m[31m
+[0mSuccessfully installed awscli-1.38.35 botocore-1.37.35 colorama-0.4.6 docutils-0.19 jmespath-1.0.1 rsa-4.7.2 s3transfer-0.11.4

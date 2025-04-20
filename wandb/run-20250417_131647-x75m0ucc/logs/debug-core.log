@@ -1,0 +1,11 @@
+{"time":"2025-04-17T13:16:46.412447751Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp964_hcxl/port-4996.txt","pid":4996,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-04-17T13:16:46.417922129Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":41159,"Zone":""}}
+{"time":"2025-04-17T13:16:46.418130807Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":4996}
+{"time":"2025-04-17T13:16:46.590370802Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:16:47.08093907Z","level":"INFO","msg":"handleInformInit: received","streamId":"x75m0ucc","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:16:47.421789722Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"x75m0ucc","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:26:27.028660405Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:26:27.033020631Z","level":"INFO","msg":"connection: closing","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:26:27.033119139Z","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:60428"}
+{"time":"2025-04-17T13:26:27.033133683Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-04-17T13:26:28.546011853Z","level":"INFO","msg":"Parent process exited, terminating service process."}

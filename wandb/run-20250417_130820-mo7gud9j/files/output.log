@@ -1,0 +1,54 @@
+/usr/local/lib/python3.11/dist-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:621: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
+Requirement already satisfied: pip in /usr/local/lib/python3.11/dist-packages (25.0.1)
+[31mERROR: Ignored the following yanked versions: 0.3.0a0[0m[31m
+[0m[31mERROR: Could not find a version that satisfies the requirement torchdata==0.5.1 (from versions: 0.3.0a1, 0.3.0, 0.6.0, 0.6.1, 0.7.0, 0.7.1, 0.8.0, 0.9.0, 0.10.0, 0.10.1, 0.11.0)[0m[31m
+[0m[31mERROR: No matching distribution found for torchdata==0.5.1[0m[31m
+[0mTraining: (100, 2)
+Validation: (10, 2)
+Test: (10, 2)
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 100
+    })
+    validation: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+    test: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+})
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:621: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+/usr/local/lib/python3.11/dist-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Training: (100, 2)
+Validation: (10, 2)
+Test: (10, 2)
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 100
+    })
+    validation: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+    test: Dataset({
+        features: ['input_ids', 'labels'],
+        num_rows: 10
+    })
+})
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:621: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()
+/usr/local/lib/python3.11/dist-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/transformers/trainer.py:2610: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  else torch.cuda.amp.autocast(cache_enabled=cache_enabled, dtype=self.amp_dtype)
